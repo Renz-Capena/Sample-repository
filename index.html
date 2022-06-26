@@ -8,10 +8,22 @@
         <h2>Hello git sample mema gawa</h2>
         <h3>calculator</h3>
 
-        <input type="text">
+        <input id="user_input" type="text">
         <button class="btn">=</button>
         <br>
         <div id="result"></div>
         
+        <script type="text/javascript">
+            let input = document.querySelector('#user_input');
+            let btn = document.querySelector('.btn');
+            let result = document.querySelector('#result');
+            let result_eval;
+
+            btn.addEventListener('click',()=>{
+                 result_eval = eval(input.value);
+
+                result.innerHTML = result_eval
+            })
+        </script>
     </body>
 </html>
