@@ -2,3 +2,12 @@ body{
     text-align: center;
     font-family: courier;
 }
+.btn{
+    padding: 5px 20px;
+    background: none;
+    border-radius: 10px;
+}
+input{
+    border-radius: 5px;
+    text-align: center;
+}
